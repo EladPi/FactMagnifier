@@ -26,7 +26,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.eladev.factmagnifier"
     },
     "android": {
       "adaptiveIcon": {
