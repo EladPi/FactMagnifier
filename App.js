@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import { store } from './src/Redux/store';
 import { RootStackNavigator } from './src/Navigation/AppNavigator';
 import { NavigationContainer } from '@react-navigation/native';
-//import { registerForPushNotificationsAsync } from './src/Utils/registerForPushNotification';
+import { registerForPushNotificationsAsync } from './src/Utils/registerForPushNotification';
 import { useEffect } from 'react';
 import * as Sentry from 'sentry-expo';
 
@@ -20,7 +20,7 @@ Sentry.Native.captureException(new Error("Sentry Test Error number 2!"));
 export default function App() {
 
   useEffect(() => {
-    //registerForPushNotificationsAsync();
+    registerForPushNotificationsAsync();
   }, [])
 
   return (

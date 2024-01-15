@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "FactMagnifier",
-    "slug": "FactMagnifier",
+    "slug": "factmagnifier",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -43,14 +43,14 @@
     ],
     "extra": {
       "eas": {
-        "projectId": "53ac27f6-e8af-4718-bbb7-e56b8d5b93c7"
+        "projectId": "c03b9e6b-600f-4d03-9017-d7c68e9be03e"
       }
     },
     "runtimeVersion": {
       "policy": "appVersion"
     },
     "updates": {
-      "url": "https://u.expo.dev/53ac27f6-e8af-4718-bbb7-e56b8d5b93c7"
+      "url": "https://u.expo.dev/c03b9e6b-600f-4d03-9017-d7c68e9be03e"
     }
   }
 }
