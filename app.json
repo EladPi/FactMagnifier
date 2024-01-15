@@ -4,19 +4,8 @@
     "slug": "factmagnifier",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./src/Assets/appicon/newappicon.png",
     "userInterfaceStyle": "light",
-    "hooks": {
-      "postPublish": [
-        {
-          "file": "sentry-expo/upload-sourcemaps",
-          "config": {
-            "organization": "factmagnifier",
-            "project": "FactMagnifier"
-          }
-        }
-      ]
-    },
     "splash": {
       "image": "./src/Assets/appicon/splashscreen.png",
       "resizeMode": "contain",
@@ -38,9 +27,6 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [
-      "sentry-expo"
-    ],
     "extra": {
       "eas": {
         "projectId": "c03b9e6b-600f-4d03-9017-d7c68e9be03e"

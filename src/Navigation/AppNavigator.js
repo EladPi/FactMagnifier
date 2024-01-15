@@ -25,7 +25,7 @@ const Stack = createStackNavigator();
 const RootStack = createStackNavigator();
 
 
-export function SettingsStack() {
+function SettingsStack() {
   return (
     <Stack.Navigator initialRouteName='MainScreen'>
       <Stack.Screen name="MainScreen" component={SettingsMainScreen} options={{ headerShown: false, headerTitle: 'Settings' }} />
@@ -38,7 +38,7 @@ export function SettingsStack() {
   );
 }
 
-export function AppNavigator() {
+function AppNavigator() {
   return (
     <Tab.Navigator
       initialRouteName="Facts"

@@ -41,7 +41,8 @@ const FactContainer = () => {
             if (result.contents) {
                 dispatch(addFact(result.contents));
                 dispatch(addFact(resultTwo.contents));
-            } else {
+            }else{
+                return;
             }
         } catch (error) {
             setIsConnected(false);
@@ -73,6 +74,7 @@ const FactContainer = () => {
             if (result.contents) {
                 dispatch(addFact(result.contents));
             } else {
+                return;
             }
         } catch (error) {
             setIsConnected(false);
