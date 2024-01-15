@@ -2,7 +2,7 @@ import { Text, View, StyleSheet, SafeAreaView, TouchableOpacity } from "react-na
 import { openURL } from "../../Utils/openURL";
 
 const SettingsContactScreen = ({ navigation }) => {
-    const email = 'mailto:thinktrail.app@gmail.com'
+    const email = 'mailto:mindbrew.app@gmail.com'
     return(
         <SafeAreaView style={styles.container}>
             <View style={styles.subContainer}>
@@ -10,7 +10,7 @@ const SettingsContactScreen = ({ navigation }) => {
                     For information, questions, bug report and more, please contact us on:
                 </Text>
                 <TouchableOpacity onPress={()=>openURL(email)} style={styles.touchable}>
-                    <Text style={styles.linkText}>thinktrail.app@gmail.com</Text>
+                    <Text style={styles.linkText}>mindbrew.app@gmail.com</Text>
                 </TouchableOpacity>
             </View>
         </SafeAreaView>

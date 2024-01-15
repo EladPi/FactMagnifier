@@ -3,15 +3,15 @@ import { openURL } from "../../Utils/openURL";
 
 const SettingsPrivacyScreen = ({ navigation }) => {
     const firebaseUrl = 'https://firebase.google.com/support/privacy';
-    const email = 'mailto:thinktrail.app@gmail.com'
+    const email = 'mailto:mindbrew.app@gmail.com'
 
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView style={styles.subContainer} contentContainerStyle={{ paddingBottom: 20 }}>
-                <Text style={{fontSize:18, fontWeight:'bold', marginBottom:15}}>Last updated: 7/1/2024</Text>
+                <Text style={{fontSize:18, fontWeight:'bold', marginBottom:15}}>Last updated: 15/1/2024</Text>
 
                 <Text>
-                    At ThinkTrail, one of our main priorities is the privacy of our users. This Privacy Policy document contains types of information that is collected and recorded by ThinkTrail and how we use it.
+                    At FactMagnifier, one of our main priorities is the privacy of our users. This Privacy Policy document contains types of information that is collected and recorded by FactMagnifier and how we use it.
                 </Text>
 
                 <Text style={styles.title}>1. Information Collection and Use:</Text>
@@ -27,19 +27,19 @@ const SettingsPrivacyScreen = ({ navigation }) => {
 
                 <Text style={styles.title}>2. Data Storage and Security:</Text>
                 <Text>
-                    The push tokens are securely stored in a Firebase database and are not accessible to anyone. They are used exclusively for delivering notifications pertinent to ThinkTrail.
+                    The push tokens are securely stored in a Firebase database and are not accessible to anyone. They are used exclusively for delivering notifications pertinent to FactMagnifier.
                     For more information, you can read Google's <TouchableOpacity style={styles.buttons} onPress={()=> openURL(firebaseUrl)}><Text style={styles.buttonText}>Firebase privacy policy</Text></TouchableOpacity>.
                 </Text>
 
                 <Text style={styles.title}>3. User Control and Consent:</Text>
                 <Text>
-                    You can enable or disable push notifications for ThinkTrail at any time through your device's settings.
+                    You can enable or disable push notifications for FactMagnifier at any time through your device's settings.
                     By using our Service, you agree to the collection and use of information in relation to this policy.
                 </Text>
 
                 <Text style={styles.title}>4. Compliance with Laws:</Text>
                 <Text>
-                    ThinkTrail will disclose your personal information where required to do so by law or subpoena.
+                    FactMagnifier will disclose your personal information where required to do so by law or subpoena.
                     We are committed to complying with all applicable laws and regulations regarding user data and privacy.
                 </Text>
 
@@ -54,7 +54,7 @@ const SettingsPrivacyScreen = ({ navigation }) => {
                 <Text style={styles.title}>6. Contact Us:</Text>
                 <Text>
                     If you have any questions or suggestions about our Privacy Policy,
-                    do not hesitate to contact us at <TouchableOpacity style={styles.buttons} onPress={()=> openURL(email)}><Text style={styles.buttonText}>thinktrail.app@gmail.com</Text></TouchableOpacity>.
+                    do not hesitate to contact us at <TouchableOpacity style={styles.buttons} onPress={()=> openURL(email)}><Text style={styles.buttonText}>mindbrew.app@gmail.com</Text></TouchableOpacity>.
                 </Text>
 
             </ScrollView>

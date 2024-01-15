@@ -50,6 +50,13 @@ const FactContainer = () => {
         }
     }
 
+    useEffect(()=>{
+        console.log("AllFacts:",facts)
+    },[facts])
+    useEffect(()=>{
+        console.log("selectedCategory:",selectedCategory)
+    },[selectedCategory])
+
 
     useEffect(() => {
         initialFactGenerator();
