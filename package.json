@@ -29,7 +29,8 @@
     "expo-notifications": "~0.20.1",
     "@sentry/react-native": "5.10.0",
     "sentry-expo": "~7.1.0",
-    "expo-updates": "~0.18.19"
+    "expo-updates": "~0.18.19",
+    "expo-constants": "~14.4.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

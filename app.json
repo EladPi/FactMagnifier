@@ -18,9 +18,9 @@
       ]
     },
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./src/Assets/appicon/splashscreen.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#2B8EDC"
     },
     "assetBundlePatterns": [
       "**/*"
