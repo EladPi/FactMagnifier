@@ -41,7 +41,7 @@ const FactContainer = () => {
             if (result.contents) {
                 dispatch(addFact(result.contents));
                 dispatch(addFact(resultTwo.contents));
-            }else{
+            } else {
                 return;
             }
         } catch (error) {
@@ -49,13 +49,6 @@ const FactContainer = () => {
             console.error("Error fetching a random fact1:", error);
         }
     }
-
-    useEffect(()=>{
-        console.log("AllFacts:",facts)
-    },[facts])
-    useEffect(()=>{
-        console.log("selectedCategory:",selectedCategory)
-    },[selectedCategory])
 
 
     useEffect(() => {
@@ -88,7 +81,7 @@ const FactContainer = () => {
             console.error("Error fetching a random fact2 :", error);
         }
     }
-    
+
 
 
     useEffect(() => {
@@ -138,6 +131,7 @@ const FactContainer = () => {
             <ScrollView
                 contentContainerStyle={styles.scrollViewContainer}
                 pagingEnabled={true}
+                showsVerticalScrollIndicator={false}
                 scrollEventThrottle={16}
                 onMomentumScrollEnd={handleScroll}
             >

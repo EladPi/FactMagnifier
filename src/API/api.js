@@ -8,7 +8,6 @@ export async function fetchRandomFacts() {
   
     const data = await response.json();
     // Handle the response data
-    console.log('Data from Cloud Function:', data);
     return data;
   } catch (error) {
     // Handle errors
@@ -28,7 +27,6 @@ export async function fetchFactsByCategory(category) {
   
     const data = await response.json();
     // Handle the response data
-    console.log('Data from Cloud Function for Category:', data);
     return data;
   } catch (error) {
     // Handle errors
@@ -46,7 +44,6 @@ export async function fetchTodayInHistory() {
   
     const data = await response.json();
     // Handle the response data
-    console.log('Data from Cloud Function for TodayInHistory:', data);
     return data;
   } catch (error) {
     // Handle errors
