@@ -24,6 +24,7 @@ const CategoriesContainer = () => {
                         <SingleCategory
                             key={category}
                             category={category}
+                            color={details.color}
                             imgSrc={details.img}
                             isSelected={selectedCategory === category}
                             onSelect={handleCategorySelect}

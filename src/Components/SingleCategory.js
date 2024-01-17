@@ -3,20 +3,13 @@ import { View, ActivityIndicator, Image, Text, TouchableOpacity, StyleSheet } fr
 import checked from '../Assets/checked.png';
 import { addCategory, removeCategory } from "../Redux/Reducers/categoriesSlice";
 import { useDispatch,  } from "react-redux";
-import { backgroundColors } from "../Utils/backgroundColors";
 import FadingAlert from "./FadingAlert";
 
 
-const SingleCategory = ({ category, imgSrc, isSelected, onSelect }) => {
+const SingleCategory = ({ category, color, imgSrc, isSelected, onSelect }) => {
     const dispatch = useDispatch();
     const [alertVisible, setAlertVisible] = useState(false);
-    const [backgroundColor, setBackgroundColor] = useState(null);
     const message = 'Your facts changed!'
-
-    useEffect(() => {
-        const randomColor = backgroundColors[Math.floor(Math.random() * backgroundColors.length)];
-        setBackgroundColor(randomColor);
-    }, [])
 
     const handleOnPress = () => {
         setAlertVisible(true);
@@ -32,10 +25,10 @@ const SingleCategory = ({ category, imgSrc, isSelected, onSelect }) => {
 
 
     return (
-        <TouchableOpacity style={[styles.touchable, { backgroundColor: backgroundColor }, isSelected && styles.selected]} onPress={handleOnPress}>
+        <TouchableOpacity style={[styles.touchable, { backgroundColor: color }, isSelected && styles.selected]} onPress={handleOnPress}>
             <View style={styles.container}>
                 <View style={styles.textAndCheckedBoxContainer}>
-                    <View style={[styles.textView, { backgroundColor: backgroundColor }, isSelected && styles.selected]}>
+                    <View style={[styles.textView, { backgroundColor: color }, isSelected && styles.selected]}>
                         <Text style={styles.text} >{category}</Text>
                     </View>
                     {isSelected ? <Image style={styles.checked} source={checked} /> : <View style={styles.unCheckedView}></View>}

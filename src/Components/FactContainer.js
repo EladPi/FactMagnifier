@@ -7,10 +7,10 @@ import { useEffect, useState } from "react";
 import { selectCategory } from "../Redux/Reducers/categoriesSlice";
 import sadEmoji from '../Assets/sadEmoji.png'
 import NetInfo from '@react-native-community/netinfo';
-
+import { TouchableOpacity } from "react-native-gesture-handler";
 
 const FactContainer = () => {
-    const [isConnected, setIsConnected] = useState(true);
+    const [isConnected, setIsConnected] = useState(false);
     const facts = useSelector(selectAllFacts);
     const isLoading = useSelector(selectIsLoading);
     const dispatch = useDispatch();
@@ -82,14 +82,13 @@ const FactContainer = () => {
         }
     }
 
-
+    const restart = async () => {
+        dispatch(clearFacts());
+        setLastFetchScrollPosition(0);
+        await initialFactGenerator();
+    }
 
     useEffect(() => {
-        const restart = async () => {
-            dispatch(clearFacts());
-            setLastFetchScrollPosition(0);
-            await initialFactGenerator();
-        }
         restart();
     }, [selectedCategory])
 
@@ -108,7 +107,6 @@ const FactContainer = () => {
         // Unsubscribe to the listener when the component unmounts
         return () => unsubscribe();
     }, []);
-
 
 
 
@@ -155,6 +153,9 @@ const FactContainer = () => {
                     <View style={styles.factContainer}>
                         <Image style={styles.errorImg} source={sadEmoji} />
                         <Text style={styles.errorText}>An unexpected problem occured. Please check your internet connection or try again later!</Text>
+                        <TouchableOpacity onPress={()=> restart()} style={styles.resetTouchable}>
+                            <Text>Reload</Text>
+                        </TouchableOpacity>
                     </View>
 
 
@@ -224,6 +225,15 @@ const styles = StyleSheet.create({
         fontWeight: '500',
         letterSpacing: 0.8
 
+    },
+    resetTouchable: {
+        borderWidth:1,
+        borderRadius:10,
+        paddingVertical:10,
+        paddingHorizontal:20,
+        marginTop:20,
+        backgroundColor:"#71d172",
+        
     },
 })
 

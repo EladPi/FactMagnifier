@@ -2,7 +2,6 @@ import health from '../Assets/categoriesImages/health.png';
 import animal from '../Assets/categoriesImages/animal.png';
 import artists from '../Assets/categoriesImages/artists.png';
 import authors from '../Assets/categoriesImages/authors.png';
-import biography from '../Assets/categoriesImages/biography.png';
 import countries from '../Assets/categoriesImages/countries.png';
 import dogs from '../Assets/categoriesImages/dogs.png';
 import energy from '../Assets/categoriesImages/energy.png';
@@ -23,103 +22,144 @@ import vegetables from '../Assets/categoriesImages/vegetables.png';
 import todayinhistory from '../Assets/categoriesImages/todayinhistory.png'
 import europe from '../Assets/categoriesImages/europe.png'
 import ancientcivilizations from '../Assets/categoriesImages/ancientcivilizations.png'
-import musicinstruments from '../Assets/categoriesImages/musicinstruments.png'
 import viruses from '../Assets/categoriesImages/viruses.png'
 import cats from '../Assets/categoriesImages/cats.png'
 import dinosaurs from '../Assets/categoriesImages/dinosaurs.png'
+import weather from '../Assets/categoriesImages/weather.png'
+import religion from '../Assets/categoriesImages/religion.png'
+import humanbody from '../Assets/categoriesImages/humanbody.png'
 import wondersoftheworld from '../Assets/categoriesImages/wondersoftheworld.png'
 
 
 export const imageSource = {
     'Today In History':{
-        img:todayinhistory
+        img:todayinhistory,
+        color:"#a89151"
     },
     'Europe':{
-        img:europe
-    },
-    'Ancient Civilizations':{
-        img:ancientcivilizations
+        img:europe,
+        color:"#5283ba"
     },
     'Health':{
-        img:health
+        img:health,
+        color:"#a6e3af"
     },
     'History':{
-        img:history
+        img:history,
+        color:"#b09361"
+    },
+    'Weather':{
+        img:weather,
+        color:"#58a9bf"
+    },
+    'Religion':{
+        img:religion,
+        color:"#4f93db"
+    },
+    'Human Body':{
+        img:humanbody,
+        color:"#eb424a"
+    },
+    'Ancient Civilizations':{
+        img:ancientcivilizations,
+        color:"#cfb16b"
     },
     'Scientists':{
-        img:scientists
+        img:scientists,
+        color:"#f2ca6b"
     },
     'Viruses':{
-        img:viruses
+        img:viruses,
+        color:"#51f0c8"
     },
     'Animal':{
-        img:animal
+        img:animal,
+        color:"#87eda7"
     },
     'Wonders of the World':{
-        img:wondersoftheworld
+        img:wondersoftheworld,
+        color:"#4b71b3"
     },
     'Cats':{
-        img:cats
+        img:cats,
+        color:"#cae3e8"
     },
     'Energy':{
-        img:energy
+        img:energy,
+        color:"#70d49f"
     },
     'Food':{
-        img:food
+        img:food,
+        color:"#b57b35"
     },
     'Countries':{
-        img:countries
+        img:countries,
+        color:"#b35a42"
     },
     'Fiction':{
-        img:fiction
+        img:fiction,
+        color:"#7190f0"
     },
     'Cities':{
-        img:cities
+        img:cities,
+        color:"#edb65c"
     },
     'Dogs':{
-        img:dogs
+        img:dogs,
+        color:"#f7a00a"
     },
     'Seas':{
-        img:seas
+        img:seas,
+        color:"#54a4f0"
     },
     'Plants':{
-        img:plants
+        img:plants,
+        color:"#7dbd8c"
     },
     'Authors':{
-        img:authors
+        img:authors,
+        color:"#a18558"
     },
     'Artists':{
-        img:artists
+        img:artists,
+        color:"#65b6db"
     },
     'Vegetables':{
-        img:vegetables
+        img:vegetables,
+        color:"#059922"
     },
     'US-States':{
-        img:usstates
+        img:usstates,
+        color:"#de4747"
     },
     'Space':{
-        img:space
+        img:space,
+        color:"#675ff5"
     },
     'Transportation':{
-        img:transportation
+        img:transportation,
+        color:"#acb0b0"
     },
     'Periodic Table':{
-        img:periodictable
+        img:periodictable,
+        color:"#6c8ccc"
     },
-    'Biography':{
-        img:biography
+    'National Parks':{
+        img:nationalparks,
+        color:"#47b1ba"
     },
-    'National Park':{
-        img:nationalparks
-    },
-    'Man Made Disasters':{
-        img:manmadedisasters
-    },
-    'Music Instruments':{
-        img:musicinstruments
+    'Manmade Disasters':{
+        img:manmadedisasters,
+        color:"#545b5c"
     },
     'Dinosaurs':{
-        img:dinosaurs
+        img:dinosaurs,
+        color:"#368f10"
     },
     
 }
+
+
+/*
+removed: music instruments, biography
+*/
