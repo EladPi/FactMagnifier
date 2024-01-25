@@ -2,7 +2,7 @@
   "expo": {
     "name": "FactMagnifier",
     "slug": "factmagnifier",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "orientation": "portrait",
     "icon": "./src/Assets/appicon/newappicon.png",
     "userInterfaceStyle": "light",
@@ -16,7 +16,7 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "buildNumber": "1.0.2",
+      "buildNumber": "1.0.3",
       "bundleIdentifier": "com.eladev.factmagnifier"
     },
     "android": {
