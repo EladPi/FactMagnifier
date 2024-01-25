@@ -20,9 +20,9 @@ const SettingsPrivacyScreen = ({ navigation }) => {
                     The information that we request will be retained by us and used as described in this privacy policy. The app does use third-party services that may collect information used to identify you.
                 </Text>
 
-                <Text style={styles.title}>Push Tokens:</Text>
+                <Text style={styles.title}>Push Tokens and device's name:</Text>
                 <Text>
-                    We collect your device's push token solely for the purpose of sending notifications about new facts or updates directly to your device. This service is optional and can be turned off at any time through your phone's settings.
+                    We collect your device's push token and name solely for the purpose of sending notifications about new facts or updates directly to your device. This service is optional and can be turned off at any time through your phone's settings.
                 </Text>
 
                 <Text style={styles.title}>2. Data Storage and Security:</Text>
