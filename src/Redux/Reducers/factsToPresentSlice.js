@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import decodeHTMLEntities from "../../Utils/decoding";
 
 
 const initialState= {
@@ -12,8 +13,10 @@ export const factsToPresentSlice = createSlice ({
     reducers:{
         addFact: (state , action) =>{
             const {id}=action.payload;
+            const decodedSub=decodeHTMLEntities(action.payload.subcategory);
+            const decodedFact=decodeHTMLEntities(action.payload.fact);
             if(id){
-                state.facts.push(action.payload);
+                state.facts.push({...action.payload, subcategory:decodedSub,fact:decodedFact});
                 state.isLoading=false;
             }
         },

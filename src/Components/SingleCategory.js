@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import { View, ActivityIndicator, Image, Text, TouchableOpacity, StyleSheet } from "react-native";
 import checked from '../Assets/checked.png';
 import { addCategory, removeCategory } from "../Redux/Reducers/categoriesSlice";
