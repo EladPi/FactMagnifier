@@ -15,9 +15,19 @@ export const factsToPresentSlice = createSlice ({
             const {id}=action.payload;
             const decodedSub=decodeHTMLEntities(action.payload.subcategory);
             const decodedFact=decodeHTMLEntities(action.payload.fact);
-            if(id){
+            const decodedDate= decodeHTMLEntities(action.payload.date);
+            const decodedEvent= decodeHTMLEntities(action.payload.event);
+
+            if(id && decodedFact){
                 state.facts.push({...action.payload, subcategory:decodedSub,fact:decodedFact});
                 state.isLoading=false;
+                console.log("***************************went to decoded fact")
+            }
+
+            else if(id && decodedDate){
+                state.facts.push({...action.payload, date:decodedDate,evemt:decodedEvent});
+                state.isLoading=false;
+                console.log("*****************************went to decoded date");
             }
         },
         removeFact: (state, action) =>{
